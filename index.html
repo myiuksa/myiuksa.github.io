@@ -1,8 +1,12 @@
 <html>
 <head>
-<title>Yes</title>
+<title>OGF e-Trading Platform</title>
+<link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+
 <h1> OGF e-Trading Platform </h1>
 
 <form>
@@ -19,15 +23,12 @@
 	
 	function button() {
 		
-		var oc = document.getElementById("oc").value;
+	var oc = document.getElementById("oc").value;
 	var tc = document.getElementById("tc").value;
 	var amount = document.getElementById("amount").value;
 	var item = document.getElementById("item").value;
-	if (oc === "" || tc === "" || amount === "" || item === "") {
-		alert("Invalid input"); }
-	else {
-		alert( oc + " has traded " + amount + " of " + item + " with " + tc ); }
-}
+	ModalWindow.openModal ({title: oc + ' is trading with ' + tc, content: oc + ' has traded ' + amount + ' units of ' + item + ' with ' + tc});
+ }
 </script>
 </body>
 </html>
