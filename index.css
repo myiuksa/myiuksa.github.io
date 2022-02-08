@@ -42,11 +42,11 @@
     cursor: pointer;
 }
 
-.modal__close:active {
-    transform: scale(0.9);
-}
-
 .modal__content {
     padding: 15px;
     font-size: 0.9em;
-    }
+}
+
+.modal__close:active {
+    transform: scale(0.9);
+}
